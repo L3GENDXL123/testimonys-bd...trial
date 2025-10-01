@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Testimony!</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+      text-align: center;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px 20px;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeInUp 1.5s ease forwards;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4rem;
+      color: #fff8dc;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      animation: popIn 1s ease forwards;
+    }
+
+    h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 700px;
+      margin: 10px auto;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    /* Backgrounds */
+    .intro { background: linear-gradient(to bottom right, #ff758c, #ff7eb3); }
+    .letters { background: linear-gradient(to bottom right, #43cea2, #185a9d); }
+    .pictures { background: linear-gradient(to bottom right, #ff9966, #ff5e62); }
+    .special { background: linear-gradient(to bottom right, #ffcc70, #ff8177); }
+    .amazing { background: linear-gradient(to bottom right, #8360c3, #2ebf91); }
+    .ending { background: linear-gradient(to bottom right, #f7971e, #ffd200); }
+
+    /* Cards for letters */
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 500px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .card:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: scale(1.05);
+      box-shadow: 0px 6px 20px rgba(255,255,255,0.5);
+    }
+
+    /* Special & Amazing sections */
+    ul { list-style: none; padding: 0; font-size: 18px; }
+    ul li { margin: 10px 0; }
+
+    /* Picture carousel */
+    .carousel {
+      position: relative;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .carousel img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+    }
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      background: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+    .arrow:hover { background: rgba(0,0,0,0.8); }
+    .left { left: -50px; }
+    .right { right: -50px; }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes popIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    /* Balloons */
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 60px;
+      height: 80px;
+      border-radius: 50% 50% 45% 55%;
+      animation: floatUp 10s infinite;
+      opacity: 0.7;
+    }
+    .balloon::before {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      width: 2px;
+      height: 30px;
+      background: white;
+      transform: translateX(-50%);
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(0) rotate(0deg); }
+      100% { transform: translateY(-110vh) rotate(20deg); }
+    }
+
+    /* Confetti */
+    .confetti {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      background: red;
+      top: -10px;
+      animation: fall linear forwards;
+      z-index: 1000;
+    }
+    @keyframes fall { to { transform: translateY(110vh) rotate(720deg); } }
+  </style>
+</head>
+<body>
+
+  <!-- Balloons -->
+  <div class="balloon" style="left: 10%; background: #ff4d6d; animation-duration: 12s;"></div>
+  <div class="balloon" style="left: 30%; background: #ffcc00; animation-duration: 10s;"></div>
+  <div class="balloon" style="left: 50%; background: #4d94ff; animation-duration: 14s;"></div>
+  <div class="balloon" style="left: 70%; background: #66ff99; animation-duration: 11s;"></div>
+  <div class="balloon" style="left: 85%; background: #ff9933; animation-duration: 13s;"></div>
+
+  <!-- Intro -->
+  <section class="intro">
+    <h1>🎉 Happy Birthday, Testimony 🎉</h1>
+    <p>Today we celebrate you — your smile, your kindness, and all the amazing memories we share. Scroll down to see a little surprise 💖</p>
+  </section>
+
+  <!-- Letters -->
+  <section class="letters">
+    <h2>Letters from Family & Friends ✉️</h2>
+    <div class="card"><p><strong>Best Friend:</strong> “You are the sunshine in my life. I’m so grateful for all the laughs we’ve shared.”</p></div>
+    <div class="card"><p><strong>Mom:</strong> “Happy Birthday, my dear Testimony! You make me so proud every single day.”</p></div>
+    <div class="card"><p><strong>Brother:</strong> “You’re not just my sister, you’re my hero. Love you always.”</p></div>
+  </section>
+
+  <!-- Throwback Pictures with Carousel -->
+  <section class="pictures">
+    <h2>Throwback Moments 📸</h2>
+    <div class="carousel">
+      <button class="arrow left" onclick="prevImage()">&#10094;</button>
+      <img id="carouselImage" src="https://via.placeholder.com/600x400?text=Throwback+1" alt="Throwback">
+      <button class="arrow right" onclick="nextImage()">&#10095;</button>
+    </div>
+    <p>So many unforgettable memories together 💕</p>
+  </section>
+
+  <!-- New Section: What Makes You Special -->
+  <section class="special">
+    <h2>What Makes You Special 🌟</h2>
+    <ul>
+      <li>Your laughter is contagious.</li>
+      <li>You care deeply for others.</li>
+      <li>You’re always full of creative ideas.</li>
+      <li>You’re brave in facing challenges.</li>
+      <li>You inspire kindness everywhere you go.</li>
+      <li>You make even ordinary days magical.</li>
+      <li>You’re a true blessing to everyone who knows you.</li>
+    </ul>
+  </section>
+
+  <!-- Why You Are Amazing -->
+  <section class="amazing">
+    <h2>Why You Are So Amazing 💖</h2>
+    <ul>
+      <li>You always bring joy to everyone around you.</li>
+      <li>You are kind, caring, and so strong.</li>
+      <li>You light up every room you walk into.</li>
+      <li>You inspire others with your love and determination.</li>
+    </ul>
+  </section>
+
+  <!-- Ending -->
+  <section class="ending">
+    <h1>🎂 Happy Birthday Once Again 🎂</h1>
+    <p>We all love you so much, Testimony. Wishing you happiness, laughter, and endless blessings ahead! 💐</p>
+  </section>
+
+  <!-- Scripts -->
+  <script>
+    // Confetti
+    function launchConfetti() {
+      for (let i = 0; i < 100; i++) {
+        let confetti = document.createElement("div");
+        confetti.classList.add("confetti");
+        document.body.appendChild(confetti);
+        confetti.style.left = Math.random() * window.innerWidth + "px";
+        confetti.style.backgroundColor = `hsl(${Math.random()*360},100%,50%)`;
+        confetti.style.animationDuration = (Math.random() * 3 + 2) + "s";
+        confetti.style.opacity = Math.random();
+        setTimeout(() => confetti.remove(), 5000);
+      }
+    }
+    window.onload = launchConfetti;
+
+    // Carousel
+    let images = [
+      "https://via.placeholder.com/600x400?text=Throwback+1",
+      "https://via.placeholder.com/600x400?text=Throwback+2",
+      "https://via.placeholder.com/600x400?text=Throwback+3"
+    ];
+    let currentIndex = 0;
+    function showImage(index) {
+      document.getElementById("carouselImage").src = images[index];
+    }
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+    }
+    function prevImage() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(currentIndex);
+    }
+  </script>
+</body>
+</html>
