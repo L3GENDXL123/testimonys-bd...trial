@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Testimony!</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+      text-align: center;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px 20px;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeInUp 1.5s ease forwards;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4rem;
+      color: #fff8dc;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      animation: popIn 1s ease forwards;
+    }
+
+    h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 700px;
+      margin: 10px auto;
+      font-size: 20px; /* Slightly bigger for readability */
+      line-height: 1.6;
+    }
+
+    /* Backgrounds */
+    .intro { background: linear-gradient(to bottom right, #ff758c, #ff7eb3); }
+    .letters { background: linear-gradient(to bottom right, #43cea2, #185a9d); }
+    .poem { background: linear-gradient(to bottom right, #ff9a9e, #fad0c4); }
+    .special { background: linear-gradient(to bottom right, #ffcc70, #ff8177); }
+    .amazing { background: linear-gradient(to bottom right, #8360c3, #2ebf91); }
+    .ending { background: linear-gradient(to bottom right, #f7971e, #ffd200); }
+
+    /* Cards for letters */
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 15px;
+      padding: 25px;
+      margin: 25px auto;
+      max-width: 95%; /* Stretching wider */
+      width: 95%; /* Closer to screen edges */
+      font-size: 1.3rem;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .card:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: scale(1.05);
+      box-shadow: 0px 6px 20px rgba(255,255,255,0.5);
+    }
+
+    /* Special Excel letter */
+    .special-letter {
+      border: 2px solid gold;
+      box-shadow: 0px 0px 15px rgba(255,215,0,0.4);
+      font-style: italic;
+      transition: all 0.4s ease-in-out;
+    }
+    .special-letter:hover {
+      box-shadow: 0px 0px 25px rgba(255,215,0,0.8);
+      transform: scale(1.02);
+    }
+
+    /* Lists */
+    ul { list-style: none; padding: 0; font-size: 20px; }
+    ul li { margin: 10px 0; }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes popIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    /* Balloons */
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 60px;
+      height: 80px;
+      border-radius: 50% 50% 45% 55%;
+      animation: floatUp 10s infinite;
+      opacity: 0.7;
+    }
+    .balloon::before {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      width: 2px;
+      height: 30px;
+      background: white;
+      transform: translateX(-50%);
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(0) rotate(0deg); }
+      100% { transform: translateY(-110vh) rotate(20deg); }
+    }
+
+    /* Confetti */
+    .confetti {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      background: red;
+      top: -10px;
+      animation: fall linear forwards;
+      z-index: 1000;
+    }
+    @keyframes fall { to { transform: translateY(110vh) rotate(720deg); } }
+  </style>
+</head>
+<body>
+
+  <!-- Balloons -->
+  <div class="balloon" style="left: 10%; background: #ff4d6d; animation-duration: 12s;"></div>
+  <div class="balloon" style="left: 30%; background: #ffcc00; animation-duration: 10s;"></div>
+  <div class="balloon" style="left: 50%; background: #4d94ff; animation-duration: 14s;"></div>
+  <div class="balloon" style="left: 70%; background: #66ff99; animation-duration: 11s;"></div>
+  <div class="balloon" style="left: 85%; background: #ff9933; animation-duration: 13s;"></div>
+
+  <!-- Intro -->
+  <section class="intro">
+    <h1>🎉 Happy Birthday, Testimony 🎉</h1>
+    <p>Today we celebrate you, your smile, your kindness, and everything we love about you. Scroll down to see a little surprise 💖</p>
+  </section>
+
+  <!-- Letters -->
+  <section class="letters">
+    <h2>Letters from Friends ✉️</h2>
+    <div class="card"><p><strong>Stephanie:</strong> “Cosmology says they're are over 6million stars but they missed one right here with us .
+You're my star ,the brightest of them all shining through the darkness that tends to consume a person most times.
+Praying you a life filled with the light of Christ 
+                                      Yours lovingly,
+                                       Muna 💞”</p></div>
+    <div class="card"><p><strong>Dominion:</strong> “Happy birthday Testimony ❤️🔥, love you so much, wishing you many more Years, long life and prosperity in Good and sound health, you won't depart from God presence in Jesus name amen 🔥.”</p></div>
+  </section>
+      
+  <!-- Poetic Tribute -->
+  <section class="poem">
+    <h2>A Poetic Tribute ✨</h2>
+    <p><em>Written by Divine Favour</em></p>
+    <p>They say every flower tells a story<br>but none quite as soft and powerful as yours.<br>You remind me of lilacs in bloom—gentle in presence,<br>yet bold enough to color the wind with their fragrance.</p>
+    <p>There’s something sacred about your spirit<br>not loud, but deeply felt, like the hue of lilac at dusk:<br>calm, rare, and quietly unforgettable.<br>You don't just walk through the world—you leave beauty trailing behind.</p>
+    <p>May your days be like a lilac field in spring<br>full of renewal, wrapped in light,<br>and kissed by the warmth of God's endless grace.<br>Keep blooming, even when the world forgets to notice.</p>
+    <p>You are poetry in petals,<br>and the world is better with you in full color.</p>
+
+    <!-- Zino's Letter -->
+    <div class="card">
+      <p><strong>Zino:</strong> “Hello Tessie, Happy birthday. This is a wonderful day cause it's the day a queen was born.  
+      You always seem to know when to take charge cause you're a natural born leader.  
+      Though we aren't really close, these few months we've been together have been so wonderful.  
+      So Happy birthday Testimony... may the grace of the Lord be with you..”</p>
+    </div>
+
+    <!-- Excel's Letter -->
+    <div class="card special-letter">
+      <p><strong>Excel:</strong> “Hey tessie... Happy Birthdayyy.. you are a wonderful person and a good friend.  
+      You've had a positive impact on my life, I'm not gonna lie, you are a Testimony in my life...  
+      I pray that God is going to add more years to your life and raise you in His presence forever 🙂”</p>
+    </div>
+  </section>
+
+  <!-- Special -->
+  <section class="special">
+    <h2>What Makes You Special 🌟</h2>
+    <ul>
+      <li>Your laughter is contagious.</li>
+      <li>You care deeply for others.</li>
+      <li>You brought me closer to God .</li>
+      <li>You’re so kind..... although misleading sometimes.</li>
+      <li>You inspire kindness everywhere you go.</li>
+      <li>You are a Testimony.</li>
+      <li>You’re a true blessing to everyone who knows you.</li>
+    </ul>
+  </section>
+
+  <!-- Why Amazing -->
+  <section class="amazing">
+    <h2>Why You Are So Amazing 💖</h2>
+    <ul>
+      <li>You always bring joy to everyone around you.</li>
+      <li>You carry the presence of God everywhere you go.</li>
+      <li>You light up every room you walk into with your smile.</li>
+      <li>You brought me closer to God.(again)</li>
+      <li>....</li>
+    </ul>
+  </section>
+
+  <!-- Ending -->
+  <section class="ending">
+    <h1>🎂 Happy Birthday Once Again 🎂</h1>
+    <p>We all love you so much, Testimony. Wishing you happiness, laughter, and endless blessings ahead! 💐</p>
+  </section>
+
+  <!-- Scripts -->
+  <script>
+    // Confetti
+    function launchConfetti() {
+      for (let i = 0; i < 100; i++) {
+        let confetti = document.createElement("div");
+        confetti.classList.add("confetti");
+        document.body.appendChild(confetti);
+        confetti.style.left = Math.random() * window.innerWidth + "px";
+        confetti.style.backgroundColor = `hsl(${Math.random()*360},100%,50%)`;
+        confetti.style.animationDuration = (Math.random() * 3 + 2) + "s";
+        confetti.style.opacity = Math.random();
+        setTimeout(() => confetti.remove(), 5000);
+      }
+    }
+    window.onload = launchConfetti;
+  </script>
+</body>
+</html>
